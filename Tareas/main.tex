@@ -1,0 +1,125 @@
+\documentclass[12pt]{article}
+
+% --- Página y tipografía ---
+\usepackage[letterpaper,margin=2.5cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc} % si compilas con pdfLaTeX
+\usepackage{lmodern}
+\usepackage{microtype}
+
+% --- Imágenes y color ---
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+% --- Control fino de espacios ---
+\usepackage{setspace}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+\thispagestyle{empty}
+
+% ===== Encabezado con logos + texto =====
+\begin{minipage}[c]{0.18\textwidth}
+    \centering
+    % Cambia por tu logo izquierdo
+    \includegraphics[width=0.95\linewidth]{img/logo_usac.jpeg}
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.60\textwidth}
+    \small
+    Universidad de San Carlos de Guatemala\\
+    Escuela de Ciencias Físicas y Matemáticas\\
+    Nombre estudiante:\\ Jorge Geovanny Gatica Herrera\\
+    Carnet: \\ 202601453\\
+    Programación 1\\
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.18\textwidth}
+    \centering
+    % Cambia por tu logo derecho
+    \includegraphics[width=1.4\linewidth]{img/logo_ecfm.jpg}
+\end{minipage}
+
+\vspace{0.5cm}
+
+% Línea horizontal superior (gruesa)
+\noindent\rule{\textwidth}{1.2pt}
+
+\vspace{0.2cm}
+
+% ===== Título =====
+\begin{center}
+    {\Large\scshape Titulo}\\[0.3em]
+\end{center}
+Utilidad de la programación \LaTeX,  en el análisis de datos
+\vspace{0.1cm}
+
+% Fecha
+\begin{center}
+    \small\scshape 2 de febrero de 2026
+\end{center}
+
+\vspace{0.2cm}
+
+% Línea horizontal inferior (gruesa)
+\noindent\rule{\textwidth}{1.2pt}
+
+\vspace{0.6cm}
+
+% ===== Caja de resumen =====
+\noindent
+\colorbox{gray!35}{%
+    \parbox{\textwidth}{%
+        \vspace{0.6em}
+        \textbf{Resumen}\\[0.3em]
+        \small
+\LaTeX, es una herramienta practica para el registro de documentos en base
+ a la divulgación o el desarrollo cientifico, en el área donde quisiera especificarme (Energía nuclear) es muy útil para mantener un registro al día
+ de los avances que se han observado a lo largo de la experimentación.\\
+        \vspace{0.8em}
+    }%
+}
+
+
+\section{Objetivos}
+\begin{enumerate}
+    \item Definir donde el lenguaje de programación \LaTeX, es útil en el área de 
+    generación de energá a base de reacciones físicas nucleares.\\
+    \item Resolver cualquier incertidubre acerca del conocimiento y las capacidades del lenguaje de
+    programación \LaTeX.\\
+    \item Practicar el lenguaje de programación \LaTeX, para el desarrollo personal beneficiando
+    distintas áreas de estudio.\\
+\end{enumerate}
+
+\section{Marco Teórico}
+A continuación se redactarán las aplicaciones prácticas de \LaTeX, se aclara que no es un estudio formalmente
+riguroso, pero nos da argumentos y raszones validas para utilizar y aprender \LaTeX.\\
+Aunque el uso explicito de \LaTeX, no se menciona en ningún articulo o investigación acerca de generadodes
+de energía a partir de la fusión nuclear, podemos deducir varios usos para esta rama de la ciencia. 
+Los más comúnes entre todos (como puede ser más evidente) son: el redactar articulos cientificos con un 
+formato ya establecido sin tener que hacer mayor esfuerzo y la redacción de medidas de seguridad en un formato 
+establecido.\\\\
+Algunas alternativas para \LaTeX, es Zenodo. La utilidad que la mayoria de personas en el
+mundo es Git. Esta utilidad permite a diferentes maquinas poder trabajar en un mismo
+código simultaneamente.\\\\
+Git, es la herramienta estándar para gestionar versiones de código en la industria general,
+\LaTeX, es solamente una herramienta o utilidad más, existen varias alternativas.
+
+\section{Conclusiones}
+
+\begin{enumerate}
+\item LaTeX, es una herramienta que facilita la redacción cientifica, distintas ramas
+de la física preieren utilizar diversos lenguajes de programación, aunque no se menciona
+explicitamente en ningún artículo, LaTeX, es una buena opción para la divulgación
+cietíica.\\
+
+\item LaTeX, es un lenguaje de programación, el cual no tiene una interfaz en sí, existen
+varios programas que toleran LaTeX, aunque es más fácil operar en sistemas operativos
+"Linux", pero queda a discreción del usuario.\\
+
+\item LaTeX, es "intuitivo" dentro de lo que cabe, con práctica se puede lograr un 
+avanzado de codificación.\\
+
+\end{enumerate}
+
+\end{document}

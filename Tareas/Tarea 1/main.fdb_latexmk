@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1770083816.03144 "c:/Users/jorge/OneDrive/Documentos/Repositorios/F12-Programacion/Tareas/main.tex" "main.pdf" "main" 1770083816.88364 0
+["pdflatex"] 1771358832.09269 "c:/Users/jorge/OneDrive/Documentos/Repositorios/F12-Programacion/Tareas/Tarea 1/main.tex" "main.pdf" "main" 1771358832.75748 0
   "C:/Users/jorge/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1770076152 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/jorge/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1769653542 13333487 84367223a5744fc378417b05b4127134 ""
   "C:/Users/jorge/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc" 1256929440 2375 baa924870cfb487815765f9094cf3728 ""
@@ -61,11 +61,11 @@
   "C:/Users/jorge/AppData/Local/Programs/MiKTeX/tex/latex/microtype/mt-cmr.cfg" 1752015111 22906 b0be544692bb405a84d147a96af5d777 ""
   "C:/Users/jorge/AppData/Local/Programs/MiKTeX/tex/latex/setspace/setspace.sty" 1670403145 22490 8cac309b79a4c53a4ffce4b1b07aead0 ""
   "C:/Users/jorge/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "c:/Users/jorge/OneDrive/Documentos/Repositorios/F12-Programacion/Tareas/main.tex" 1770083815 4378 466af58b49311a2e9ee59d20e69cc2c4 ""
+  "c:/Users/jorge/OneDrive/Documentos/Repositorios/F12-Programacion/Tareas/Tarea 1/main.tex" 1771358831 4296 b203a2fb9bae161048f6bb9e246f9e6e ""
   "img/logo_ecfm.jpg" 1770076075 7443 f7cae53f39482af9b2749e2d999e73c8 ""
   "img/logo_usac.jpeg" 1770076075 14142 2c4c6a6e54916582949661327ce9eef4 ""
-  "main.aux" 1770083816 331 33d45d7a0a3860104a86961e8aadef95 "pdflatex"
-  "main.tex" 1770083815 4378 466af58b49311a2e9ee59d20e69cc2c4 ""
+  "main.aux" 1771358832 331 33d45d7a0a3860104a86961e8aadef95 "pdflatex"
+  "main.tex" 1771358831 4296 b203a2fb9bae161048f6bb9e246f9e6e ""
   (generated)
   "main.aux"
   "main.log"

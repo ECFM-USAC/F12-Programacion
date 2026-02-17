@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.28)  2 FEB 2026 19:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.28)  17 FEB 2026 14:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/jorge/OneDrive/Documentos/Repositorios/F12-Programacion/Tareas/main.tex
-(c:/Users/jorge/OneDrive/Documentos/Repositorios/F12-Programacion/Tareas/main.tex
+**"c:/Users/jorge/OneDrive/Documentos/Repositorios/F12-Programacion/Tareas/Tarea 1/main.tex"
+(c:/Users/jorge/OneDrive/Documentos/Repositorios/F12-Programacion/Tareas/Tarea 1/main.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
 (C:\Users\jorge\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -327,17 +327,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 95--107
 [1
 
 {C:/Users/jorge/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/jorge/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc} <./img/logo_usac.jpeg> <./img/logo_ecfm.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 111--115
+Underfull \hbox (badness 10000) in paragraph at lines 111--114
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--119
+Underfull \hbox (badness 10000) in paragraph at lines 115--118
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--122
+Underfull \hbox (badness 10000) in paragraph at lines 119--121
 
  []
 
@@ -348,15 +348,15 @@ L3 programming layer <2025-12-24>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 5118 strings out of 467871
- 84202 string characters out of 5418376
+ 5116 strings out of 467871
+ 84244 string characters out of 5418376
  534895 words of memory out of 5000000
  33891 multiletter control sequences out of 15000+600000
- 669889 words of font info for 95 fonts, out of 8000000 for 9000
+ 669798 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,6n,65p,1073b,214s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,6n,65p,1083b,214s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/jorge/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/jorge/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/jorge/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/jorge/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/jorge/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb>
-Output written on main.pdf (2 pages, 156470 bytes).
+Output written on main.pdf (2 pages, 156328 bytes).
 PDF statistics:
  37 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

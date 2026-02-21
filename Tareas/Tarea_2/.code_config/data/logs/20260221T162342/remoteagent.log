@@ -1,0 +1,13 @@
+2026-02-21 16:23:42.489 [info] 
+
+
+
+
+2026-02-21 16:23:42.503 [info] Extension host agent started.
+2026-02-21 16:23:42.522 [info] Started initializing default profile extensions in extensions installation folder. file:///config/extensions
+2026-02-21 16:23:42.554 [info] Completed initializing default profile extensions in extensions installation folder. file:///config/extensions
+2026-02-21 16:23:56.624 [info] [172.17.0.1][300f1bb5][ManagementConnection] New connection established.
+2026-02-21 16:23:57.603 [info] [172.17.0.1][2a1c1fa6][ExtensionHostConnection] New connection established.
+2026-02-21 16:23:57.765 [info] [172.17.0.1][2a1c1fa6][ExtensionHostConnection] <1164> Launched Extension Host Process.
+2026-02-21 16:23:58.462 [info] [172.17.0.1][2a1c1fa6][ExtensionHostConnection] <1164> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+

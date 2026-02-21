@@ -16,3 +16,6 @@
 2026-02-21 16:25:48.117 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
 2026-02-21 16:26:19.547 [info] ExtensionService#_doActivateExtension vscode.markdown-language-features, startup: false, activationEvent: 'onLanguage:markdown'
 2026-02-21 16:26:20.304 [info] ExtensionService#_doActivateExtension vscode.markdown-math, startup: false, activationEvent: 'api', root cause: vscode.markdown-language-features
+2026-02-21 16:51:33.599 [info] Extension host terminating: received terminate message from renderer
+2026-02-21 16:51:33.602 [info] Lock '/config/data/User/workspaceStorage/668e306/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2026-02-21 16:51:33.777 [info] Extension host with pid 1164 exiting with code 0

@@ -37,7 +37,7 @@ int main() {
             std::cout << "  Fuera de rango, intenta de nuevo." << std::endl;
         }
     } while (valor < 1 || valor > 10);
-
+   
     std::cout << "  Valor aceptado: " << valor << std::endl;
 
     // ── break y continue ──────────────────────────────────────────────────────

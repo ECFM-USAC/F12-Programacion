@@ -51,14 +51,18 @@ run_test() {
   TOTAL=$((TOTAL + 1))
 
   local actual
+  local t_start t_end elapsed_ms
+  t_start=$(date +%s%3N)
   actual=$(timeout "$TIMEOUT" bash -c "$cmd" < "$input" 2>/dev/null) || true
+  t_end=$(date +%s%3N)
+  elapsed_ms=$(( t_end - t_start ))
 
   if diff -q <(echo "$actual" | tr -s ' ' | sed 's/[[:space:]]*$//') \
              <(cat "$expected" | tr -s ' ' | sed 's/[[:space:]]*$//') > /dev/null 2>&1; then
-    pass "$name"
+    pass "$name  (${elapsed_ms} ms)"
     PASSED=$((PASSED + 1))
   else
-    fail "$name"
+    fail "$name  (${elapsed_ms} ms)"
     echo "    Esperado:"
     cat "$expected" | sed 's/^/      /'
     echo "    Obtenido:"

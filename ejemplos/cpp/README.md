@@ -116,6 +116,81 @@ g++ -o leer_lista 06_leer_lista.cpp
 
 ---
 
+### 07 — Funciones
+**Archivo:** `07_funciones.cpp`
+
+Muestra como definir y llamar funciones con parametros y valor de retorno.
+Incluye prototipos (declaraciones previas), funciones `void` y funciones que retornan valores.
+
+| Concepto       | Ejemplo                              |
+|----------------|--------------------------------------|
+| Prototipo      | `double area(double base, double h);` |
+| Funcion void   | no retorna valor, solo ejecuta       |
+| return         | devuelve el resultado al llamador    |
+
+```bash
+g++ -o funciones 07_funciones.cpp
+./funciones
+```
+
+---
+
+### 08 — Vectores (`std::vector`)
+**Archivo:** `08_vectores.cpp`
+
+Lista dinamica que puede crecer o reducirse en tiempo de ejecucion.
+A diferencia de los arreglos, no necesitas saber el tamano de antemano.
+
+| Operacion         | Metodo          |
+|-------------------|-----------------|
+| Agregar al final  | `push_back(x)`  |
+| Eliminar el ultimo| `pop_back()`    |
+| Tamano actual     | `size()`        |
+| Primer/ultimo     | `front()`, `back()` |
+
+```bash
+g++ -std=c++17 -o vectores 08_vectores.cpp
+./vectores
+```
+
+---
+
+### 09 — Cadenas de texto (`std::string`)
+**Archivo:** `09_strings.cpp`
+
+Operaciones fundamentales sobre cadenas: longitud, concatenacion, busqueda de subcadenas,
+extraccion con `substr` y conversion de mayusculas/minusculas.
+
+```bash
+g++ -std=c++17 -o strings 09_strings.cpp
+./strings
+```
+
+---
+
+### 10 — Matrices (arreglos 2D)
+**Archivo:** `10_matrices.cpp`
+
+Declara una matriz con `int m[FILAS][COLUMNAS]`, la recorre con dos ciclos `for`
+anidados y calcula la suma de cada fila y la traza de la diagonal principal.
+
+```bash
+g++ -o matrices 10_matrices.cpp
+./matrices
+```
+
+---
+
+## Algoritmos de busqueda
+
+### Busqueda Lineal
+**Carpeta:** `busqueda_lineal/`
+
+Implementacion completa con pseudocodigo, codigo C++ y casos de prueba para el autograder.
+Ver [`busqueda_lineal/README.md`](busqueda_lineal/README.md) para detalles.
+
+---
+
 ## Orden sugerido de estudio
 
 ```
@@ -125,6 +200,11 @@ g++ -o leer_lista 06_leer_lista.cpp
 04_condicionales
 05_ciclos
 06_leer_lista
+07_funciones
+08_vectores
+09_strings
+10_matrices
+busqueda_lineal/
 ```
 
 Cada ejemplo construye sobre los anteriores: los condicionales y ciclos asumen que ya sabes declarar variables y leer datos del teclado.

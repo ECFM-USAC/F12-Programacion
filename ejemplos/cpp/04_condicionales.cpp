@@ -14,8 +14,13 @@ int main() {
     std::cout << "Ingresa una nota (0-100): ";
     std::cin >> nota;
 
+    if (nota>100){
+        std::cout << "Error, nota invalida" << std::endl;
+        return -1;
+    }
+
     // ── 1. if / else if / else ────────────────────────────────────────────────
-    std::cout << "\n[if/else if/else]" << std::endl;
+    std::cout << "\n Ejemplo de : [if/else if/else]" << std::endl;
     if (nota >= 90) {
         std::cout << "Excelente" << std::endl;
     } else if (nota >= 70) {

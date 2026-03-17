@@ -34,10 +34,6 @@ for (int i = 0; i < n; i++) {
 
 std::cin >> objetivo;
 int indice = busqueda_de_dos_en_dos(lista, n, objetivo);
-if (indice != -1) {
-    std::cerr << objetivo  << indice << std::endl;
-} else {
-    std::cerr << objetivo << std::endl;
-}
+std::cout << indice << std::endl;
 return -1;
 }

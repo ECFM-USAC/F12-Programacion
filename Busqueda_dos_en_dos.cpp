@@ -24,21 +24,20 @@ int busqueda_de_dos_en_dos(const std::vector<int>& lista, int n, int objetivo) {
 int main(){
 std::vector<int> lista;
 int n, objetivo;
-std::cerr << "Ingrese el número de elementos en la lista: ";
 std::cin >> n;
-std::cerr << "Ingrese los elementos de la lista (en orden ascendente): ";
+
 for (int i = 0; i < n; i++) {
     int elemento;
     std::cin >> elemento;
     lista.push_back(elemento);
 }
-std::cerr << "Ingrese el objetivo a buscar: ";
+
 std::cin >> objetivo;
 int indice = busqueda_de_dos_en_dos(lista, n, objetivo);
 if (indice != -1) {
-    std::cerr << "El objetivo " << objetivo << " se encuentra en el índice " << indice << std::endl;
+    std::cerr << objetivo  << indice << std::endl;
 } else {
-    std::cerr << "El objetivo " << objetivo << " no se encuentra en la lista." << std::endl;
+    std::cerr << objetivo << std::endl;
 }
 return -1;
 }

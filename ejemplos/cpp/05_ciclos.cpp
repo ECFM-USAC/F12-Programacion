@@ -36,9 +36,10 @@ int main() {
         if (valor < 1 || valor > 10) {
             std::cout << "  Fuera de rango, intenta de nuevo." << std::endl;
         }
-    } while (valor < 1 || valor > 10);
+    } while (!(valor >= 1 && valor <= 10));
    
     std::cout << "  Valor aceptado: " << valor << std::endl;
+
 
     // ── break y continue ──────────────────────────────────────────────────────
     std::cout << "\n[break/continue] Numeros del 1 al 10, omitiendo multiplos de 3:" << std::endl;

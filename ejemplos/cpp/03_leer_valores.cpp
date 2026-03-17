@@ -32,7 +32,7 @@ int main() {
     std::cin.ignore();   // descarta el salto de linea que quedo en el buffer
     std::string nombre;
     std::cout << "Ingresa tu nombre completo: ";
-    std::getline(std::cin, nombre);
+    std::get.line(std::cin, nombre);
 
     // --- Mostrar resumen ---
     std::cout << "\n--- Resumen ---" << std::endl;

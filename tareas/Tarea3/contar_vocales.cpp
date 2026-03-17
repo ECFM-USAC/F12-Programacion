@@ -2,7 +2,7 @@
 
 main()
 {
-    std::cout<<"Ingresa una linea de texto:";
+    
     int(count) = 0;
     std::string linea;
     std::getline(std::cin, linea);
@@ -16,6 +16,6 @@ main()
             count++;
         }
     }
-    std::cout<< "La frase tiene: "<<count<<" vocales";
+    std::cout<<count<< std::endl;
 return 0;
 }   

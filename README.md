@@ -33,11 +33,46 @@ El curso se desarrollará mediante clases teórico-prácticas orientadas a la re
 
 ---
 
-## 📂 Estructura del Repositorio 
+## 📂 Estructura del Repositorio
 
 ```text
+├── autograder/        # Herramienta de evaluacion automatica de tareas
 ├── ejemplos/
+│   ├── cpp/           # Ejemplos de C++ organizados por tema
+│   └── python/        # Notebooks y scripts de Python
 ├── tareas/
 ├── practicas/
 ├── recursos/
 └── README.md
+```
+
+---
+
+## 🤖 Autograder
+
+El repositorio incluye una herramienta de evaluacion automatica que compila y ejecuta los programas C++ del estudiante contra casos de prueba predefinidos. Compatible con Windows, Linux y macOS — solo requiere `g++`.
+
+📄 [Ver documentacion del autograder](autograder/README.md)
+
+**Uso rapido:**
+
+```bash
+# Linux / macOS
+./autograder/autograder.sh <nombre_tarea> <archivo.cpp>
+
+# Windows
+autograder\autograder.bat <nombre_tarea> <archivo.cpp>
+```
+
+---
+
+## 🧩 Ejemplos de C++
+
+Coleccion de ejemplos basicos de C++ organizados por tema, desde Hola Mundo hasta Programacion Orientada a Objetos y algoritmos de busqueda.
+
+📄 [Ver documentacion de ejemplos C++](ejemplos/cpp/README.md)
+
+Temas cubiertos: variables y tipos, entrada/salida, condicionales, ciclos, arreglos, funciones, vectores, cadenas, matrices, clases, constructores, encapsulacion, herencia, polimorfismo, busqueda lineal y STL.
+
+---
+

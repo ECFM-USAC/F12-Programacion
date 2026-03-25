@@ -1,0 +1,68 @@
+\documentclass{article}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+
+\title{Ejemplo básico con Tablas de LaTeX}
+\author{Erick Diaz}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{Ecuaciones en LaTeX}
+
+\subsection{Ecuaciones en Linea}
+La famosa ecuación $E = mc^2$ relaciona masa y energía.
+
+\subsection{Ecuaciones centradas (sin numerar)}
+\[
+a^2 + b^2 = c^2 \\
+\]
+\[
+\sum_{i=1}^{n+1} i
+\]
+
+\subsection{Ecuaciones numeradas}
+\begin{equation*}
+F = ma
+\label{eq:newton}
+\end{equation*}
+La ecuación \ref{eq:newton} representa la segunda ley de Newton.
+
+\subsection{Fracciones, raíces y potencias}
+\[
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+\]
+
+\subsection{Sumatorias e integrales}
+\[
+\sum_{i=1}^{n} i = \frac{n(n+1)}{2}
+\]
+\[
+\int_{0}^{\infty} e^{-x}\,dx = 1
+\]
+
+\subsection{Sistemas de ecuaciones}
+\[
+\begin{cases}
+x + y = 10 \\
+2x - y = 5
+\end{cases}
+\]
+
+\subsection{Ecuaciones alineadas}
+\begin{align}
+f(x) &= x^4 + 2x + 3x \\
+     &= (x + 1)^2
+\end{align}
+
+\subsection{Matrices}
+\[
+A =
+\begin{pmatrix}
+1 & 2 \\
+3 & 4
+\end{pmatrix}
+\]
+
+\end{document}

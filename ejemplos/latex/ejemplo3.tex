@@ -1,0 +1,47 @@
+\documentclass{article}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+
+\title{Ejemplo básico con imagenes de LaTeX}
+\author{Erick Diaz}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{Imagenes en LaTeX}
+
+
+\begin{figure}[h]
+  \centering
+  \includegraphics{imagenes/img1.jpeg}
+  \caption{Ejemplo de una imagen en LaTeX.}
+\end{figure}
+
+
+
+Control del tamaño unsado el ancho del texto
+\includegraphics[width=0.6\textwidth]{imagenes/img1.jpeg}
+
+
+
+\begin{figure}[t]   % t=top, h=here, b=bottom
+  \centering
+  \includegraphics[width=0.7\textwidth]{imagenes/img1.jpeg}
+  \caption{Imagen ubicada en la parte superior.}
+  \label{fig:robot}
+\end{figure}
+
+
+\section{Leyendas y referencias cruzadas}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{imagenes/logo_ecfm.png}
+  \caption{Diagrama del sistema experimental.}
+  \label{fig:logo}
+\end{figure}
+
+Como se observa en la Figura \ref{fig:robot}, podemos hacer la referencia, aca refenciamos al logo de la escuela  Figura \ref{fig:logo}
+
+\end{document}

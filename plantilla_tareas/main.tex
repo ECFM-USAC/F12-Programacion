@@ -1,0 +1,99 @@
+\documentclass[12pt]{article}
+
+% --- Página y tipografía ---
+\usepackage[letterpaper,margin=2.5cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc} % si compilas con pdfLaTeX
+\usepackage{lmodern}
+\usepackage{microtype}
+
+% --- Imágenes y color ---
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+% --- Control fino de espacios ---
+\usepackage{setspace}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+\thispagestyle{empty}
+
+% ===== Encabezado con logos + texto =====
+\begin{minipage}[c]{0.18\textwidth}
+    \centering
+    % Cambia por tu logo izquierdo
+    \includegraphics[width=0.95\linewidth]{img/logo_usac.jpeg}
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.60\textwidth}
+    \small
+    Universidad de San Carlos de Guatemala\\
+    Escuela de Ciencias Físicas y Matemáticas\\
+    Nombre estudiante\\
+    Carnet: \\
+    Programación 1\\
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.18\textwidth}
+    \centering
+    % Cambia por tu logo derecho
+    \includegraphics[width=1.4\linewidth]{img/logo_ecfm.jpg}
+\end{minipage}
+
+\vspace{0.5cm}
+
+% Línea horizontal superior (gruesa)
+\noindent\rule{\textwidth}{1.2pt}
+
+\vspace{0.2cm}
+
+% ===== Título =====
+\begin{center}
+    {\Large\scshape Titulo}\\[0.3em]
+\end{center}
+
+\vspace{0.1cm}
+
+% Fecha
+\begin{center}
+    \small\scshape 29 de enero de 2026
+\end{center}
+
+\vspace{0.2cm}
+
+% Línea horizontal inferior (gruesa)
+\noindent\rule{\textwidth}{1.2pt}
+
+\vspace{0.6cm}
+
+% ===== Caja de resumen =====
+\noindent
+\colorbox{gray!35}{%
+    \parbox{\textwidth}{%
+        \vspace{0.6em}
+        \textbf{Resumen}\\[0.3em]
+        \small
+
+        \vspace{0.8em}
+    }%
+}
+
+
+\section{Objetivos}
+
+\section{Marco Teórico}
+
+\section{Diseño Experimental}
+
+\section{Resultados}
+
+\section{Discusión de Resultados}
+
+\section{Conclusiones}
+
+\section{Referencias}
+
+\section{Anexos}
+\end{document}
+
+\end{document}

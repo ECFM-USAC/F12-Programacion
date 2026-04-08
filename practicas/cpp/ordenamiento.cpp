@@ -2,6 +2,7 @@
 #include <vector>
 #include <string>
 
+
 //------- ORDENAMIENTO DE BURBUJA -------
 void burbuja(std::vector<int>& lista, int n) {
     for (int i = 0; i < n-1; i++) {

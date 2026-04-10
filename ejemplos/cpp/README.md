@@ -181,6 +181,102 @@ g++ -o matrices 10_matrices.cpp
 
 ---
 
+### 11 — Clases Basico
+**Archivo:** `11_clases_basico.cpp`
+
+Introduce el concepto de clase: como agrupar datos (atributos) y comportamiento (metodos) en una sola unidad, y como crear objetos independientes a partir de una misma plantilla.
+
+| Concepto      | Descripcion                                      |
+|---------------|--------------------------------------------------|
+| `class`       | Define la plantilla del objeto                   |
+| `public:`     | Sección accesible desde fuera de la clase        |
+| Atributo      | Variable que pertenece al objeto (`ancho`, `alto`) |
+| Metodo        | Funcion que pertenece a la clase (`area()`)      |
+| Objeto        | Instancia concreta creada con `NombreClase var;` |
+
+```bash
+g++ -o clases_basico 11_clases_basico.cpp
+./clases_basico
+```
+
+---
+
+### 12 — Constructores y Destructores
+**Archivo:** `12_constructores.cpp`
+
+Muestra como inicializar objetos automaticamente al crearlos usando constructores (por defecto y con parametros), y el destructor que se ejecuta al final del ciclo de vida del objeto.
+
+| Concepto               | Descripcion                                           |
+|------------------------|-------------------------------------------------------|
+| Constructor por defecto | Se llama cuando no se pasan argumentos               |
+| Constructor con params  | Inicializa el objeto con valores especificos          |
+| Lista de inicializacion | `Clase(params) : atrib(val) {}` — forma mas eficiente |
+| Destructor `~Clase()`   | Se ejecuta automaticamente al salir del scope         |
+
+```bash
+g++ -o constructores 12_constructores.cpp
+./constructores
+```
+
+---
+
+### 13 — Encapsulacion
+**Archivo:** `13_encapsulacion.cpp`
+
+Demuestra como proteger los datos internos de una clase usando `private`, exponiendo solo lo necesario mediante getters, setters y metodos con validacion.
+
+| Concepto   | Descripcion                                                   |
+|------------|---------------------------------------------------------------|
+| `private:` | Atributos solo accesibles dentro de la clase                  |
+| `public:`  | Metodos que forman la interfaz del objeto                     |
+| getter     | Metodo que devuelve el valor de un atributo (`getSaldo()`)    |
+| setter     | Metodo que modifica un atributo con validacion                |
+
+```bash
+g++ -o encapsulacion 13_encapsulacion.cpp
+./encapsulacion
+```
+
+---
+
+### 14 — Herencia
+**Archivo:** `14_herencia.cpp`
+
+Muestra como una clase hija hereda atributos y metodos de una clase padre, puede agregar nuevos miembros propios, y como funciona la herencia en cadena.
+
+| Concepto      | Descripcion                                               |
+|---------------|-----------------------------------------------------------|
+| `class B : public A` | B hereda todo lo publico/protegido de A          |
+| `protected:`  | Accesible desde la clase y sus hijas, no desde afuera    |
+| Constructor encadenado | `B(params) : A(params) {}` — llama al padre    |
+| Sobrescribir metodo | La hija redefine un metodo del padre              |
+
+```bash
+g++ -o herencia 14_herencia.cpp
+./herencia
+```
+
+---
+
+### 15 — Polimorfismo
+**Archivo:** `15_polimorfismo.cpp`
+
+Demuestra polimorfismo con metodos virtuales: una misma llamada se comporta diferente segun el tipo real del objeto en tiempo de ejecucion.
+
+| Concepto            | Descripcion                                              |
+|---------------------|----------------------------------------------------------|
+| `virtual`           | Permite que las clases hijas reemplacen el metodo        |
+| `virtual ... = 0`   | Metodo virtual puro — la hija esta obligada a definirlo  |
+| Clase abstracta     | Tiene al menos un metodo virtual puro; no se instancia   |
+| `virtual ~Clase()`  | Destructor virtual: necesario al usar punteros a la base |
+
+```bash
+g++ -o polimorfismo 15_polimorfismo.cpp
+./polimorfismo
+```
+
+---
+
 ## Algoritmos de busqueda
 
 ### Busqueda Lineal
@@ -188,6 +284,58 @@ g++ -o matrices 10_matrices.cpp
 
 Implementacion completa con pseudocodigo, codigo C++ y casos de prueba para el autograder.
 Ver [`busqueda_lineal/README.md`](busqueda_lineal/README.md) para detalles.
+
+---
+
+### 16 — Vector vs Lista (`std::vector` vs `std::list`)
+**Archivo:** `16_vector_vs_lista.cpp`
+
+Compara las dos estructuras de datos dinamicas mas comunes de la STL lado a lado, mostrando donde cada una tiene ventaja.
+
+| Operacion                  | `vector`         | `list`           |
+|----------------------------|------------------|------------------|
+| Acceso por indice `[i]`    | O(1)             | No disponible    |
+| `push_back` / `pop_back`   | O(1) amortizado  | O(1)             |
+| `push_front` / `pop_front` | O(n)             | O(1)             |
+| Insertar/eliminar en medio | O(n)             | O(1) con iterador|
+| Memoria                    | Contigua (cache) | Nodos enlazados  |
+
+**Regla practica:** usa `vector` por defecto; usa `list` solo si necesitas muchas inserciones/eliminaciones en el medio o `push_front` frecuente.
+
+```bash
+g++ -std=c++17 -o vector_vs_lista 16_vector_vs_lista.cpp
+./vector_vs_lista
+```
+
+---
+
+## POO — Ejemplo integrador
+
+### Estudiante y Curso
+**Carpeta:** `poo/`  **Archivo:** `poo/estudiante_curso.cpp`
+
+Ejemplo integrador que combina encapsulacion, constructores y vectores para modelar estudiantes inscritos en cursos.
+
+**Clases:**
+- `Curso` — codigo, nombre y creditos de un curso (`m11`, `m12`, `f11`, `f12`)
+- `Inscripcion` — vincula un `Curso` con la nota obtenida por el estudiante
+- `Estudiante` — almacena nombre, carnet y una lista de inscripciones; calcula el promedio
+
+**Cursos modelados:**
+
+| Codigo | Nombre             | Creditos |
+|--------|--------------------|----------|
+| `m11`  | Algebra Superior   | 12       |
+| `m12`  | Calculo            | 6        |
+| `f11`  | Topicos de Fisica  | 6        |
+| `f12`  | Programacion 1     | 6        |
+
+**Nota minima para aprobar:** 61
+
+```bash
+g++ -std=c++17 -o estudiante_curso poo/estudiante_curso.cpp
+./estudiante_curso
+```
 
 ---
 
@@ -204,7 +352,14 @@ Ver [`busqueda_lineal/README.md`](busqueda_lineal/README.md) para detalles.
 08_vectores
 09_strings
 10_matrices
+11_clases_basico
+12_constructores
+13_encapsulacion
+14_herencia
+15_polimorfismo
+16_vector_vs_lista
 busqueda_lineal/
+poo/
 ```
 
 Cada ejemplo construye sobre los anteriores: los condicionales y ciclos asumen que ya sabes declarar variables y leer datos del teclado.

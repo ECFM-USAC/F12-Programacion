@@ -76,3 +76,21 @@ Temas cubiertos: variables y tipos, entrada/salida, condicionales, ciclos, arreg
 
 ---
 
+## 🐍 Ejemplos de Python
+
+Coleccion de scripts y notebooks de Jupyter organizados por tema, desde los fundamentos del lenguaje hasta el consumo de APIs científicas de la NASA.
+
+📄 [Ver documentacion de ejemplos Python](ejemplos/python/README.md)
+
+| Tema | Archivo |
+|---|---|
+| Fundamentos del lenguaje | `introduccion_python.py` |
+| Módulos de física (funcional y POO) | `fisica_basica.py`, `fisica_poo.py` |
+| Algoritmos de búsqueda y ordenamiento | `algoritmos.py`, `busqueda_visual.py` |
+| NumPy: arrays, estadística, álgebra lineal | `Numpy.ipynb` |
+| Pandas y visualización | `Pandas.ipynb`, `MatplotlibSeaborn.ipynb` |
+| XML, JSON y APIs de NASA (ISS, APOD, NEO, EONET) | `XML_JSON_APIs.ipynb` |
+| Análisis de datos con datasets reales | `analisis_datos/` |
+
+---
+

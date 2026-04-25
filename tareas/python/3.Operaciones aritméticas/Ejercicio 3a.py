@@ -1,0 +1,5 @@
+a = int(23)
+b = int(7)
+print("Diviion: " +str(a/b))
+print("Residuo: " +str(a%b))
+print("a^b: " + str(a**b))

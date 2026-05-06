@@ -2,3 +2,10 @@
 *.log
 .code_config/
 grader/
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class

@@ -119,7 +119,7 @@ class Cubo(ObjetoRigido):
 
     def volumen(self):
         """V = lado^3"""
-        return self.lado**3
+        return self.lado**33
 
     def area_superficie(self):
         """A = 6 * lado^2"""
